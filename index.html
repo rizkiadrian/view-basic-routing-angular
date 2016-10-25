@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Angular Reload</title>
+</head>
+<body>
+<div ng-app="myApp">
+<div ng-controller="controllerMain">
+<p>=================Below is link with routes===============</p>
+ <a href="/svcs-two">Page Two</a> 
+<br />
+ <a href="/svcs-three">pagethree</a> 
+<p>=============Partial Page==========</p>
+<div ng-view></div>
+<p>===========Status Route==========</p>
+<pre>$location.path() = {{$location.path()}}</pre>
+<pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
+<pre>$route.current.params = {{$route.current.params}}</pre>
+<pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
+<pre>$routeParams = {{$routeParams}}</pre>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+<script src="js/shared/angular-route.js"></script>
+<script src="js/controllers/mainController.js"></script>
+</body>
+
+</section>
+
+
+
+</body>
+
+</html>
+
